@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ReviewsSection from '../components/ReviewsSection';
 import CTABanner from '../components/CTABanner';
+import InteractiveMap from '../components/InteractiveMap';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -191,9 +192,26 @@ export default function HomePage() {
             <div className="gold-line" />
             <p>Based in Madison, WI | Serving Homeowners in 11 States</p>
           </div>
+          
+          <InteractiveMap />
+
           <div className={styles.stateGrid}>
-            {['Wisconsin','Illinois','Iowa','Minnesota','Michigan','Florida','Texas','Colorado','North Dakota','South Dakota','Washington'].map(state => (
-              <div key={state} className={styles.stateChip}>{state}</div>
+            {[
+              { name: 'Wisconsin', slug: 'wisconsin' },
+              { name: 'Illinois', slug: 'illinois' },
+              { name: 'Iowa', slug: 'iowa' },
+              { name: 'Minnesota', slug: 'minnesota' },
+              { name: 'Michigan', slug: 'michigan' },
+              { name: 'Florida', slug: 'florida' },
+              { name: 'Texas', slug: 'texas' },
+              { name: 'Colorado', slug: 'colorado' },
+              { name: 'North Dakota', slug: 'north-dakota' },
+              { name: 'South Dakota', slug: 'south-dakota' },
+              { name: 'Washington', slug: 'washington' }
+            ].map(state => (
+              <Link key={state.slug} href={`/locations/${state.slug}`} className={styles.stateChip}>
+                {state.name}
+              </Link>
             ))}
           </div>
           <p className={styles.areasNote}>
