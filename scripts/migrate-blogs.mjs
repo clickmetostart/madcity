@@ -20,15 +20,22 @@ async function extractContent(html) {
 
   // Extract Article Content
   let content = '';
-  // Usually WordPress content is inside <div class="entry-content">
-  const contentMatch = html.match(/<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<(footer|section|aside|\/article)/i);
-  if (contentMatch) {
-    content = contentMatch[1];
+  
+  if (html.includes('elementor-widget-theme-post-content')) {
+    const startSplit = html.split(/class="[^"]*elementor-widget-theme-post-content[^"]*"[^>]*>/);
+    if (startSplit.length > 1) {
+      const endSplit = startSplit[1].split(/<div[^>]*class="[^"]*elementor-widget-post-navigation|<footer|<\/main>/i);
+      content = endSplit[0].replace(/(<\/div>\s*)+$/, '');
+    }
   } else {
-    // fallback if no entry-content
-    const articleMatch = html.match(/<article[^>]*>([\s\S]*?)<\/article>/i);
-    if (articleMatch) {
-      content = articleMatch[1];
+    const contentMatch = html.match(/<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<(footer|section|aside|\/article)/i);
+    if (contentMatch) {
+      content = contentMatch[1];
+    } else {
+      const articleMatch = html.match(/<article[^>]*>([\s\S]*?)<\/article>/i);
+      if (articleMatch) {
+        content = articleMatch[1];
+      }
     }
   }
 

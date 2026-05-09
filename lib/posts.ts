@@ -65,9 +65,23 @@ export function getSortedPostsData(): Omit<BlogPost, 'content'>[] {
 }
 
 export function getPostData(slug: string): BlogPost | null {
-  const fullPath = path.join(postsDirectory, `${slug}.mdx`);
-  if (!fs.existsSync(fullPath)) return null;
+  if (!fs.existsSync(postsDirectory)) return null;
+  
+  const fileNames = fs.readdirSync(postsDirectory);
+  
+  // Find the matching file by comparing decoded slugs to handle any URL-encoded filenames
+  const targetFileName = fileNames.find(fileName => {
+    const fileNameSlug = fileName.replace(/\.mdx$/, '');
+    try {
+      return decodeURIComponent(fileNameSlug) === decodeURIComponent(slug);
+    } catch {
+      return fileNameSlug === slug;
+    }
+  });
 
+  if (!targetFileName) return null;
+
+  const fullPath = path.join(postsDirectory, targetFileName);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = parseFrontmatter(fileContents);
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -16,9 +16,10 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: Props,
+  props: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
+  const params = await props.params;
   const post = getPostData(params.slug);
 
   if (!post) {
@@ -33,7 +34,8 @@ export async function generateMetadata(
   };
 }
 
-export default function Post({ params }: Props) {
+export default async function Post(props: Props) {
+  const params = await props.params;
   const post = getPostData(params.slug);
 
   if (!post) {
