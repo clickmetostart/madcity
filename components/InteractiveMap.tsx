@@ -35,8 +35,8 @@ export default function InteractiveMap() {
     <div className={styles.mapContainer}>
       <ComposableMap projection="geoAlbersUsa" width={800} height={500}>
         <Geographies geography={geoUrl}>
-          {({ geographies }) =>
-            geographies.map(geo => {
+          {({ geographies }: { geographies: any[] }) =>
+            geographies.map((geo: any) => {
               const stateName = geo.properties.name;
               const isLicensed = !!licensedStates[stateName];
               
