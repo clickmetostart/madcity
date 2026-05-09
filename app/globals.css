@@ -122,6 +122,19 @@ li { margin-bottom: 0.4rem; color: var(--text-muted); }
   color: #fff;
 }
 
+.btn-secondary-blue {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(11,28,61,0.2);
+}
+
+.btn-secondary-blue:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(11,28,61,0.3);
+  color: #fff;
+}
+
 .btn-outline {
   background: transparent;
   color: var(--primary);

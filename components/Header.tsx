@@ -169,11 +169,11 @@ export default function Header() {
                         <div>
                           <strong>Ready to Start?</strong>
                           <p>Schedule a call or start your application with Rob Miller today.</p>
-                          <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" className="btn btn-primary btn-sm" onClick={() => setActiveMega(null)}>Start Application →</Link>
+                          <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" className="btn btn-secondary-blue btn-sm" onClick={() => setActiveMega(null)}>Start Application →</Link>
                         </div>
                       </div>
                       <div className={styles.contactQuickLinks}>
-                        <Link href="/contact" onClick={() => setActiveMega(null)}>Standard Contact Form</Link>
+                        <Link href="/contact" onClick={() => setActiveMega(null)}>Visit Contact Page</Link>
                         <Link href="tel:6082272002" onClick={() => setActiveMega(null)}>Call 608-227-2002</Link>
                       </div>
                     </div>
@@ -257,7 +257,7 @@ export default function Header() {
               <summary className={styles.mobileSummary}>Contact Us <span className={styles.mobileChevron}>▾</span></summary>
               <div className={styles.mobileSubLinks}>
                 <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" onClick={() => setMobileOpen(false)}><strong>Start Your Application</strong></Link>
-                <Link href="/contact" onClick={() => setMobileOpen(false)}>Standard Contact Form</Link>
+                <Link href="/contact" onClick={() => setMobileOpen(false)}>Visit Contact Page</Link>
                 <div className={styles.mobileDivider}>Select Your State:</div>
                 {stateLinks.map(state => (
                   <Link key={state.slug} href={`/locations/${state.slug}`} onClick={() => setMobileOpen(false)}>
