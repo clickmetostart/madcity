@@ -5,7 +5,11 @@
 .hero {
   padding: 8rem 0 4rem;
   background: linear-gradient(to bottom, #0b1c3d, #1a2a4d);
-  color: #fff;
+  color: #ffffff;
+}
+
+.hero h1 {
+  color: #ffffff;
 }
 
 .heroSubtitle {
