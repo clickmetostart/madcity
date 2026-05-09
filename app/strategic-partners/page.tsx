@@ -12,7 +12,7 @@ const partners = [
   { 
     name: 'Jason Stendalen', 
     company: 'C4 Insurance Services',
-    desc: 'Jason helps clients choose the right insurance coverage through a clear and education-focused approach.',
+    desc: 'Jason helps clients choose the right insurance coverage through a clear and education-focused approach. He makes sure homeowners understand their options and feel confident in their protection.',
     link: 'https://c4ins.com/',
     category: 'Insurance',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/jason-color-768x512-1.jpg'
@@ -20,7 +20,7 @@ const partners = [
   { 
     name: 'Dera Johnsen-Tracy', 
     company: 'Horn & Johnsen SC',
-    desc: 'Expert legal guidance for estate planning and asset protection.',
+    desc: 'Dera provides expert legal guidance focusing on estate planning, business law, and asset protection. Her tailored approach ensures that your family\'s future and hard-earned assets are fully secured.',
     link: 'https://hornjohnsen.com/',
     category: 'Legal / Estate Planning',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/Dera-L.-Johnsen-Tracy.jpg'
@@ -28,7 +28,7 @@ const partners = [
   { 
     name: 'Scott Richardson', 
     company: 'The Richardson Team - AWA',
-    desc: 'Dedicated real estate professionals serving the Madison area.',
+    desc: 'Scott and his team offer unparalleled real estate expertise in the Madison area. Whether buying or selling, their deep market knowledge and negotiation skills guarantee a seamless transaction.',
     link: 'https://www.awateam.com/',
     category: 'Real Estate',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/1567260912823-1.jpg'
@@ -36,7 +36,7 @@ const partners = [
   { 
     name: 'Al Curran', 
     company: 'Curran Cabinetry & Design',
-    desc: 'Custom cabinetry and interior design excellence.',
+    desc: 'Al brings decades of experience in custom cabinetry and interior design. From kitchen remodels to custom built-ins, his craftsmanship elevates the beauty and functionality of any home.',
     link: 'https://currancabinetrydesign.com/',
     category: 'Interior Design',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/Al-Curran-1-1024x769.jpg'
@@ -44,7 +44,7 @@ const partners = [
   { 
     name: 'Kyle Davies', 
     company: 'W.E. Davies Remodeling',
-    desc: 'Premier home remodeling and renovation services.',
+    desc: 'Kyle leads a premier home remodeling team specializing in high-end renovations. They turn existing properties into dream homes with meticulous attention to detail and structural integrity.',
     link: 'https://wedaviesremodeling.com/',
     category: 'Remodeling',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/kyle.jpg'
@@ -52,7 +52,7 @@ const partners = [
   { 
     name: 'Stephen Lange', 
     company: 'Lange\'s Painting',
-    desc: 'High-quality residential and commercial painting.',
+    desc: 'Stephen provides high-quality residential and commercial painting services. His team is known for their precision, clean workspaces, and transforming interiors and exteriors with flawless finishes.',
     link: 'https://www.langespainting.com/',
     category: 'Painting',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/Stephen-Lange-Langes-Painting.jpg'
@@ -60,7 +60,7 @@ const partners = [
   { 
     name: 'Mike Melton', 
     company: 'Under Pressure Power Washing',
-    desc: 'Professional exterior cleaning and power washing.',
+    desc: 'Mike specializes in professional exterior cleaning and power washing. His services restore the curb appeal of your home, safely removing years of grime from siding, driveways, and decks.',
     link: 'https://underpressurepowerwashingllc.com/',
     category: 'Exterior Maintenance',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/Under-Pressure-Power-Washing.jpg'
@@ -68,7 +68,7 @@ const partners = [
   { 
     name: 'Mike Putnam', 
     company: 'Putnam Exteriors',
-    desc: 'Specializing in roofing, siding, and exterior estimates.',
+    desc: 'Mike is the go-to expert for roofing, siding, and comprehensive exterior renovations. He provides honest estimates and high-quality materials to protect your home from the Wisconsin weather.',
     link: 'https://putnamexteriors-estimate.com/',
     category: 'Exteriors',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/1740759863968-1.jpg'
@@ -76,7 +76,7 @@ const partners = [
   { 
     name: 'Joe Cloute', 
     company: 'Bumble Bee Blinds',
-    desc: 'Custom window treatments and blinds for your home.',
+    desc: 'Joe offers custom window treatments, from elegant blinds to automated shades. His team provides in-home consultations to perfectly match your aesthetic and lighting control needs.',
     link: 'https://www.bumblebeeblinds.com/madison-wi/',
     category: 'Window Treatments',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/Joe-Cloute-Owner-Bumble-Bee-Blinds-Madison-WI1-1.jpg'
@@ -84,7 +84,7 @@ const partners = [
   { 
     name: 'Elena Inanov', 
     company: 'Syntha Digital',
-    desc: 'Full-service digital marketing and development.',
+    desc: 'Elena leads a full-service digital marketing and web development agency. Syntha Digital helps local businesses thrive online with cutting-edge design and strategic marketing campaigns.',
     link: 'https://synthadigital.com/',
     category: 'Marketing / Digital',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/1671640735241-1.jpg'
@@ -92,15 +92,15 @@ const partners = [
   { 
     name: 'Dean Slaby', 
     company: 'KSW Construction',
-    desc: 'Commercial and residential construction expertise.',
+    desc: 'Dean brings unparalleled expertise in commercial and large-scale residential construction. KSW is renowned for delivering complex building projects on time and with exceptional quality standards.',
     link: 'https://kswconstruction.com/',
     category: 'Construction',
-    img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/Dean-Slaby-KSW-KSW-Construction.png'
+    img: '/ksw-dean-slaby.jpg'
   },
   { 
     name: 'Eric Fenton', 
     company: 'Morgan\'s SCC',
-    desc: 'Dedicated community service and support.',
+    desc: 'Eric runs Morgan\'s SCC, dedicating his time to community service, outreach, and providing essential support networks. He is a pillar of the local community making a real difference everyday.',
     link: 'https://www.morganscc.org/',
     category: 'Community / Support',
     img: 'https://madcityhomeloans.com/wp-content/uploads/2026/02/1753816348494-1.jpg'
