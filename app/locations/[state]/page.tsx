@@ -16,9 +16,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!stateInfo) return {};
   
   return {
-    title: `${stateInfo.name} Mortgage Lender & Home Loans | ${stateInfo.specialty}`,
-    description: stateInfo.description,
-    keywords: [`mortgage lender ${stateInfo.name}`, `home loans ${stateInfo.name}`, `Rob Miller ${stateInfo.name}`, ...stateInfo.cities.map(c => `mortgage ${c}`)]
+    title: `${stateInfo.name} Mortgage Lender | ${stateInfo.specialty} | Rob Miller`,
+    description: `${stateInfo.description} Rob Miller is a high-performance mortgage expert licensed in 11 states, providing 5-star service in ${stateInfo.name}. Call 608-227-2002.`,
+    keywords: [`mortgage lender ${stateInfo.name}`, `home loans ${stateInfo.name}`, `Rob Miller ${stateInfo.name}`, `licensed in 11 states`, ...stateInfo.cities.map(c => `mortgage ${c}`)]
   };
 }
 
