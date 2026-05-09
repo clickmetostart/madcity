@@ -50,16 +50,6 @@ export default async function LocationPage({ params }: Props) {
     <main className={styles.locationPage}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.heroBg}>
-          <Image
-            src="/hero-home.jpg"
-            alt={`Home loans in ${stateName}`}
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
-            priority
-          />
-          <div className={styles.heroOverlay} />
-        </div>
         <div className={`container ${styles.heroContent}`}>
           <span className="badge">Licensed in {stateName}</span>
           <h1 className={styles.heroTitle}>Your Trusted Mortgage Lender in {stateName}</h1>
