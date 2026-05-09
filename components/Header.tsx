@@ -25,6 +25,20 @@ const services = [
   { href: '/home-equity', label: 'Home Equity', icon: '🏘️' },
 ];
 
+const stateLinks = [
+  { name: 'Wisconsin', slug: 'wisconsin' },
+  { name: 'Illinois', slug: 'illinois' },
+  { name: 'Iowa', slug: 'iowa' },
+  { name: 'Minnesota', slug: 'minnesota' },
+  { name: 'Michigan', slug: 'michigan' },
+  { name: 'Florida', slug: 'florida' },
+  { name: 'Texas', slug: 'texas' },
+  { name: 'Colorado', slug: 'colorado' },
+  { name: 'North Dakota', slug: 'north-dakota' },
+  { name: 'South Dakota', slug: 'south-dakota' },
+  { name: 'Washington', slug: 'washington' }
+];
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -138,6 +152,37 @@ export default function Header() {
                 </div>
               </div>
             </div>
+            <div 
+              className={styles.navItem} 
+              onMouseEnter={() => setActiveMega('locations')}
+            >
+              <button className={styles.navBtn}>
+                Locations <span className={styles.chevron}>▾</span>
+              </button>
+              <div className={`${styles.megaMenu} ${activeMega === 'locations' ? styles.megaVisible : ''}`}>
+                <div className="container">
+                  <div className={styles.locationsMega}>
+                    <div className={styles.megaSide}>
+                      <h3>Licensed in 11 States</h3>
+                      <p>Providing expert mortgage guidance across the country with a focus on local expertise.</p>
+                      <Link href="/contact" className="btn btn-outline btn-sm" onClick={() => setActiveMega(null)}>Contact Local Team</Link>
+                    </div>
+                    <div className={styles.locationsGrid}>
+                      {stateLinks.map(state => (
+                        <Link 
+                          key={state.slug} 
+                          href={`/locations/${state.slug}`} 
+                          className={styles.locationItem}
+                          onClick={() => setActiveMega(null)}
+                        >
+                          {state.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <Link href="/knowledge-hub" className={styles.navLink}>Knowledge Hub</Link>
             <Link href="/contact" className={styles.navLink}>Contact Us</Link>
           </nav>
@@ -190,6 +235,17 @@ export default function Header() {
                 {services.map(s => (
                   <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)}>
                     {s.label}
+                  </Link>
+                ))}
+              </div>
+            </details>
+
+            <details className={styles.mobileDetails}>
+              <summary className={styles.mobileSummary}>Locations <span className={styles.mobileChevron}>▾</span></summary>
+              <div className={styles.mobileSubLinks}>
+                {stateLinks.map(state => (
+                  <Link key={state.slug} href={`/locations/${state.slug}`} onClick={() => setMobileOpen(false)}>
+                    {state.name}
                   </Link>
                 ))}
               </div>

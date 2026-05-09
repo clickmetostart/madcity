@@ -22,10 +22,6 @@
   opacity: 1;
 }
 
-.footerLogoVertical {
-  display: none;
-}
-
 .brandTagline {
   font-size: 0.88rem;
   line-height: 1.7;
@@ -48,6 +44,30 @@
 .contactItem span { color: inherit; }
 
 .contactIcon { font-size: 0.85rem; margin-top: 2px; flex-shrink: 0; }
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  color: var(--gold, #c9a84c);
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: var(--gold, #c9a84c);
+  color: var(--primary, #0b1c3d);
+  transform: translateY(-3px);
+}
 
 .footerCta { align-self: flex-start; margin-top: 0.5rem; }
 
@@ -87,6 +107,16 @@
   line-height: 1.6;
 }
 .statesText strong { color: rgba(255,255,255,0.7); }
+
+.stateLink {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.stateLink:hover {
+  color: var(--gold, #c9a84c);
+}
 
 /* ── Bottom bar ────────────────────────────────────────── */
 .footerBottom { padding: 1.5rem 0; }
