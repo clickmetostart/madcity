@@ -18,7 +18,7 @@ const services = [
   { href: '/first-time-home-buyers', label: 'First-Time Buyers', icon: '🔑' },
   { href: '/purchase-a-new-home', label: 'Purchase a New Home', icon: '🏡' },
   { href: '/refinance-your-home', label: 'Refinance Your Home', icon: '💰' },
-  { href: '/mortgage-calculator', label: 'Mortgage Calculator', icon: '📊' },
+  { href: '/mortgage-calculator', label: 'Mortgage Calculator', icon: '🧮' },
   { href: '/mortgage-planning', label: 'Mortgage Planning', icon: '📊' },
   { href: '/annual-mortgage-review', label: 'Annual Review', icon: '📅' },
   { href: '/credit-consultation', label: 'Credit Consultation', icon: '📈' },
