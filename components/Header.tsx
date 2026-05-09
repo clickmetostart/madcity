@@ -50,10 +50,12 @@ export default function Header() {
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
         <div className={`container ${styles.navContainer}`}>
           <Link href="/" className={styles.logoLink}>
-            <Image src="/logo.jpg" alt="MadCity Home Loans" width={170} height={50} priority className={styles.logo} />
+            <Image src="/logo-transparent.png" alt="MadCity Home Loans" width={120} height={120} priority className={styles.logo} />
           </Link>
 
           <nav className={styles.nav} onMouseLeave={() => setActiveMega(null)}>
+            <Link href="/" className={styles.navLink}>Home</Link>
+
             <div 
               className={styles.navItem} 
               onMouseEnter={() => setActiveMega('loans')}
@@ -123,20 +125,21 @@ export default function Header() {
                       <Image src="/rob-miller.jpg" alt="Rob Miller" width={100} height={120} className={styles.aboutImg} />
                       <div>
                         <strong>Meet Rob Miller</strong>
-                        <p>15+ years of experience in the Madison market.</p>
-                        <Link href="/about-rob" onClick={() => setActiveMega(null)}>View Profile →</Link>
+                        <p>15+ years of expertise in the Madison market.</p>
+                        <Link href="/about-rob" onClick={() => setActiveMega(null)}>Full Bio →</Link>
                       </div>
                     </div>
                     <div className={styles.aboutLinks}>
                       <Link href="/about-mad-city-home-loans-team" onClick={() => setActiveMega(null)}>The MadCity Team</Link>
                       <Link href="/mortgage-process" onClick={() => setActiveMega(null)}>The 12-Step Process</Link>
                       <Link href="/reviews" onClick={() => setActiveMega(null)}>Client Reviews</Link>
-                      <Link href="/contact" onClick={() => setActiveMega(null)}>Contact Us</Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <Link href="/contact" className={styles.navLink}>Contact Us</Link>
           </nav>
 
           <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" rel="noopener noreferrer"
@@ -150,7 +153,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Drawer (Simplified) */}
+      {/* Mobile Drawer */}
       <div className={`${styles.mobileDrawer} ${mobileOpen ? styles.mobileOpen : ''}`}>
         <div className={styles.mobileContent}>
           <button className={styles.closeBtn} onClick={() => setMobileOpen(false)}>✕ Close</button>
