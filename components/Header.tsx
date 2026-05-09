@@ -18,6 +18,7 @@ const services = [
   { href: '/first-time-home-buyers', label: 'First-Time Buyers', icon: '🔑' },
   { href: '/purchase-a-new-home', label: 'Purchase a New Home', icon: '🏡' },
   { href: '/refinance-your-home', label: 'Refinance Your Home', icon: '💰' },
+  { href: '/mortgage-calculator', label: 'Mortgage Calculator', icon: '📊' },
   { href: '/mortgage-planning', label: 'Mortgage Planning', icon: '📊' },
   { href: '/annual-mortgage-review', label: 'Annual Review', icon: '📅' },
   { href: '/credit-consultation', label: 'Credit Consultation', icon: '📈' },
@@ -55,6 +56,31 @@ export default function Header() {
 
           <nav className={styles.nav} onMouseLeave={() => setActiveMega(null)}>
             <Link href="/" className={styles.navLink}>Home</Link>
+
+            <div className={styles.navItem} onMouseEnter={() => setActiveMega('about')}>
+              <button className={styles.navBtn}>
+                About <span className={styles.chevron}>▾</span>
+              </button>
+              <div className={`${styles.megaMenu} ${activeMega === 'about' ? styles.megaVisible : ''}`}>
+                <div className="container">
+                  <div className={styles.aboutMega}>
+                    <div className={styles.aboutCard}>
+                      <Image src="/rob-miller.jpg" alt="Rob Miller" width={100} height={120} className={styles.aboutImg} />
+                      <div>
+                        <strong>Meet Rob Miller</strong>
+                        <p>15+ years of expertise in the Madison market.</p>
+                        <Link href="/about-rob" onClick={() => setActiveMega(null)}>Full Bio →</Link>
+                      </div>
+                    </div>
+                    <div className={styles.aboutLinks}>
+                      <Link href="/about-mad-city-home-loans-team" onClick={() => setActiveMega(null)}>The MadCity Team</Link>
+                      <Link href="/mortgage-process" onClick={() => setActiveMega(null)}>The 12-Step Process</Link>
+                      <Link href="/reviews" onClick={() => setActiveMega(null)}>Client Reviews</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div 
               className={styles.navItem} 
@@ -106,33 +132,6 @@ export default function Header() {
                           </div>
                         </Link>
                       ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <Link href="/mortgage-calculator" className={styles.navLink}>Calculator</Link>
-
-            <div className={styles.navItem} onMouseEnter={() => setActiveMega('about')}>
-              <button className={styles.navBtn}>
-                About <span className={styles.chevron}>▾</span>
-              </button>
-              <div className={`${styles.megaMenu} ${activeMega === 'about' ? styles.megaVisible : ''}`}>
-                <div className="container">
-                  <div className={styles.aboutMega}>
-                    <div className={styles.aboutCard}>
-                      <Image src="/rob-miller.jpg" alt="Rob Miller" width={100} height={120} className={styles.aboutImg} />
-                      <div>
-                        <strong>Meet Rob Miller</strong>
-                        <p>15+ years of expertise in the Madison market.</p>
-                        <Link href="/about-rob" onClick={() => setActiveMega(null)}>Full Bio →</Link>
-                      </div>
-                    </div>
-                    <div className={styles.aboutLinks}>
-                      <Link href="/about-mad-city-home-loans-team" onClick={() => setActiveMega(null)}>The MadCity Team</Link>
-                      <Link href="/mortgage-process" onClick={() => setActiveMega(null)}>The 12-Step Process</Link>
-                      <Link href="/reviews" onClick={() => setActiveMega(null)}>Client Reviews</Link>
                     </div>
                   </div>
                 </div>
