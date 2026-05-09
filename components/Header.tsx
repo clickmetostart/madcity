@@ -6,12 +6,12 @@ import Image from 'next/image';
 import styles from './Header.module.css';
 
 const loanTypes = [
-  { href: '/fha-loans', label: 'FHA Loans', desc: 'Low down payment, flexible credit.', img: '/img-firsttime.jpg' },
-  { href: '/va-loans', label: 'VA Loans', desc: 'Zero down for veterans & military.', img: '/img-va.jpg' },
+  { href: '/fha-loans', label: 'FHA Loans', desc: 'Low down payment, flexible credit.', img: '/hero-home.jpg' },
+  { href: '/va-loans', label: 'VA Loans', desc: 'Zero down for veterans & military.', img: '/hero-home.jpg' },
   { href: '/conventional-loans', label: 'Conventional Loans', desc: 'Stable, long-term financing.', img: '/hero-home.jpg' },
-  { href: '/jumbo-loans', label: 'Jumbo Loans', desc: 'Luxury & high-balance homes.', img: '/img-jumbo.jpg' },
-  { href: '/usda-loans', label: 'USDA Loans', desc: 'Zero down for rural properties.', img: '/img-usda.jpg' },
-  { href: '/wheda-loans', label: 'WHEDA Loans', desc: 'Wisconsin down payment assistance.', img: '/img-handshake.jpg' },
+  { href: '/jumbo-loans', label: 'Jumbo Loans', desc: 'Luxury & high-balance homes.', img: '/hero-home.jpg' },
+  { href: '/usda-loans', label: 'USDA Loans', desc: 'Zero down for rural properties.', img: '/hero-home.jpg' },
+  { href: '/wheda-loans', label: 'WHEDA Loans', desc: 'Wisconsin down payment assistance.', img: '/hero-home.jpg' },
 ];
 
 const services = [
