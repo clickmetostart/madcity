@@ -1,0 +1,275 @@
+/* ── Top Bar ─────────────────────────────────────────── */
+.topBar {
+  background: var(--primary-dark, #060e1f);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.8rem;
+  padding: 0.45rem 0;
+  position: relative;
+  z-index: 200;
+}
+.topBarInner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.topBarRight {
+  margin-left: auto;
+  opacity: 0.6;
+}
+.topBarLink {
+  color: rgba(255,255,255,0.8);
+  transition: color 0.2s;
+}
+.topBarLink:hover { color: var(--gold, #c9a84c); }
+
+/* ── Header Shell ────────────────────────────────────── */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid rgba(11,28,61,0.06);
+  transition: box-shadow 0.3s ease;
+}
+.scrolled {
+  box-shadow: 0 4px 24px rgba(11,28,61,0.12);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  gap: 1.5rem;
+}
+
+/* ── Logo ────────────────────────────────────────────── */
+.logoLink { display: flex; align-items: center; flex-shrink: 0; }
+.logo { object-fit: contain; height: 48px; width: auto; }
+
+/* ── Desktop Nav ─────────────────────────────────────── */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0 auto;
+}
+
+.navLink {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary, #0b1c3d);
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.navLink:hover { background: rgba(11,28,61,0.05); color: var(--primary); }
+
+/* ── Dropdown ────────────────────────────────────────── */
+.dropdown { position: relative; }
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary, #0b1c3d);
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+  font-family: var(--font-body, 'Inter', sans-serif);
+}
+.navBtn:hover { background: rgba(11,28,61,0.05); }
+
+.chevron { font-size: 0.7rem; opacity: 0.6; transition: transform 0.2s; }
+.dropdown:hover .chevron { transform: rotate(180deg); }
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+  border: 1px solid rgba(11,28,61,0.08);
+  min-width: 220px;
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+  transform: translateX(-50%) translateY(6px);
+}
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Wide grid dropdown for loan types */
+.dropdownGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+  width: 460px;
+}
+
+.dropdownItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.dropdownItem:hover { background: rgba(11,28,61,0.04); }
+
+.dropdownLabel {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.dropdownDesc {
+  font-size: 0.76rem;
+  color: var(--text-muted, #5a6478);
+  line-height: 1.3;
+}
+
+.dropdownItemSimple {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--primary);
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.dropdownItemSimple:hover { background: rgba(11,28,61,0.04); color: var(--primary); }
+
+/* ── CTA button ──────────────────────────────────────── */
+.ctaBtn { flex-shrink: 0; }
+
+/* ── Hamburger ───────────────────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: all 0.25s;
+  transform-origin: center;
+}
+.hamburgerOpen span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburgerOpen span:nth-child(2) { opacity: 0; }
+.hamburgerOpen span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── Mobile Overlay ──────────────────────────────────── */
+.mobileOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 149;
+}
+
+/* ── Mobile Drawer ───────────────────────────────────── */
+.mobileDrawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(320px, 85vw);
+  background: #fff;
+  z-index: 150;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: -8px 0 40px rgba(0,0,0,0.15);
+  overflow-y: auto;
+}
+.mobileDrawerOpen { transform: translateX(0); }
+
+.mobileDrawerInner {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 0.25rem;
+  min-height: 100%;
+}
+
+.mobileLogo { margin-bottom: 1rem; }
+
+.mobileSection { border-bottom: 1px solid rgba(11,28,61,0.07); padding-bottom: 0.25rem; }
+
+.mobileSectionToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 0;
+  background: none;
+  border: none;
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.mobileSectionLinks {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+}
+.mobileSectionLinks a {
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-muted, #5a6478);
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.mobileSectionLinks a:hover { background: rgba(11,28,61,0.05); color: var(--primary); }
+
+.mobileLink {
+  display: block;
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary);
+  border-bottom: 1px solid rgba(11,28,61,0.07);
+}
+
+.mobileCtaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .nav { display: none; }
+  .ctaBtn { display: none; }
+  .hamburger { display: flex; margin-left: auto; }
+}

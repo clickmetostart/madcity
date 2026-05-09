@@ -1,0 +1,120 @@
+.calculatorCard {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  background: var(--bg-white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.inputs {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.inputGroup label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.inputGroup input[type="number"],
+.inputGroup select {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+  font-family: inherit;
+  transition: border-color var(--ease);
+}
+
+.inputGroup input[type="number"]:focus,
+.inputGroup select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.downPaymentNote {
+  font-size: 0.8rem;
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+
+.results {
+  background: var(--primary);
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.resultHeader {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.mainAmount {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  color: var(--gold);
+}
+
+.breakdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 2rem;
+}
+
+.breakdownRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.breakdownRow span {
+  opacity: 0.7;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin-top: 2.5rem;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .calculatorCard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .inputs, .results {
+    padding: 2rem;
+  }
+  .mainAmount {
+    font-size: 2.5rem;
+  }
+}

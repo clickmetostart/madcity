@@ -1,0 +1,151 @@
+.contactPage {
+  background: var(--bg-white);
+}
+
+.hero {
+  padding: 6rem 0 4rem;
+  background: linear-gradient(to bottom, var(--bg-slate), var(--bg-white));
+  text-align: center;
+}
+
+.heroSubtitle {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contactMethod {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-slate);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contactMethod h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-family: var(--font-heading);
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--ease);
+}
+
+.link:hover {
+  color: var(--gold-dark);
+}
+
+.note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.hoursBox {
+  margin-top: 1rem;
+  padding: 2.5rem;
+  background: var(--primary);
+  color: #fff;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.hoursBox h4 {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.hourRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.95rem;
+}
+
+.hourRow:last-of-type {
+  border-bottom: none;
+}
+
+.hoursNote {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quickCta {
+  background: var(--bg-slate);
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.quickCta h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.quickCta p {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+  .link {
+    font-size: 1.25rem;
+  }
+}
