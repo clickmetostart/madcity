@@ -81,16 +81,17 @@ export default async function LocationPage({ params }: Props) {
             <div className={styles.blurbBox}>
               <h3>Ready to Get Started?</h3>
               <p>
-                Take the first step toward your dream home in {stateName}. Fill out the contact form, and Rob will personally reach out to discuss your options and build a customized mortgage strategy.
+                Take the first step toward your dream home in {stateName}. Fill out the contact form below, and Rob will personally reach out to discuss your options and build a customized mortgage strategy.
               </p>
             </div>
-          </div>
-          
-          <div className={styles.sidebar}>
+
             <div className={styles.formCard}>
               <h3>Contact Us in {stateName}</h3>
               <ContactForm />
             </div>
+          </div>
+          
+          <div className={styles.sidebar}>
             <div className={styles.robCardWrap}>
               <RobCard />
             </div>
