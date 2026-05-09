@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Refinance Your Home in Wisconsin | Lower Rate & Payment | MadCity Home Loans',
+  title: 'Refinance Your Home in Wisconsin | Lower Rates | Rob Miller | MadCity',
   description:
-    'Refinance your Wisconsin home to lower your rate, reduce your payment, or access equity. Rob Miller helps homeowners find the best refinance strategy for their goals. Call 608-227-2002.',
-  keywords: ['refinance home Wisconsin', 'mortgage refinance Madison WI', 'lower mortgage rate Wisconsin', 'cash-out refinance Madison', 'FHA streamline refinance Wisconsin'],
+    'Refinance your Wisconsin home to lower your rate, reduce your payment, or access equity. Rob Miller is a refinance specialist licensed in 11 states. Call 608-227-2002.',
+  keywords: ['refinance home Wisconsin', 'mortgage refinance Madison WI', 'lower mortgage rate Wisconsin', 'cash-out refinance Madison', 'FHA streamline refinance Wisconsin', 'licensed in 11 states'],
 };
 
 const faqs = [

@@ -9,8 +9,8 @@ import styles from '../fha-loans/page.module.css';
 export const metadata: Metadata = {
   title: 'VA Home Loans in Madison, WI | $0 Down for Veterans | MadCity Home Loans',
   description:
-    'VA home loans in Wisconsin with zero down payment. Rob Miller is a trusted VA loan specialist helping veterans, active-duty military, and surviving spouses achieve homeownership. Call 608-227-2002.',
-  keywords: ['VA loans Madison WI', 'VA home loan Wisconsin', 'veteran mortgage Madison', 'zero down home loan Wisconsin', 'VA loan lender Madison'],
+    'VA home loans in Wisconsin with $0 down payment and no PMI. Rob Miller is a VA specialist licensed in 11 states helping veterans and military families. Call 608-227-2002.',
+  keywords: ['VA loans Madison WI', 'VA home loan Wisconsin', 'veteran mortgage Madison', 'zero down home loan Wisconsin', 'VA loan specialist Rob Miller', 'licensed in 11 states VA mortgage'],
 };
 
 const faqs = [

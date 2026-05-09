@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Conventional Loans in Madison, WI | MadCity Home Loans',
+  title: 'Conventional Loans in Madison, WI | Low Rates | MadCity Home Loans',
   description:
-    'Conventional home loans in Wisconsin with down payments as low as 3%. Rob Miller helps buyers with strong credit profiles get competitive rates and flexible terms. Call 608-227-2002.',
-  keywords: ['conventional loans Madison WI', 'conventional mortgage Wisconsin', 'fixed rate mortgage Madison', 'conforming loan Wisconsin'],
+    'Conventional mortgages in Wisconsin with as little as 3% down. Rob Miller offers low rates and expert planning for buyers and refinancers. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['conventional loans Madison WI', 'conventional mortgage Wisconsin', '3% down mortgage', 'low rate home loan Madison', 'fixed rate mortgage WI', 'licensed in 11 states'],
 };
 
 const faqs = [

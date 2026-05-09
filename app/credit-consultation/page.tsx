@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Credit Consultation for Home Loans | Improve Your Score | MadCity Home Loans',
+  title: 'Credit Consultation for Home Loans Madison, WI | Rob Miller',
   description:
-    'Don\'t let a low credit score stop you from buying a home. Rob Miller provides expert credit consultation and strategies to improve your score for mortgage approval in Madison, WI. Call 608-227-2002.',
-  keywords: ['credit consultation Madison WI', 'improve credit for mortgage Wisconsin', 'mortgage credit score Madison', 'Rob Miller credit advice'],
+    'Improve your credit score for a mortgage. Rob Miller provides free credit consultation and actionable plans for Wisconsin homebuyers. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['credit consultation Madison WI', 'improve credit for mortgage Wisconsin', 'mortgage credit score Madison', 'Rob Miller credit advice', 'licensed in 11 states'],
 };
 
 const faqs = [

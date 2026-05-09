@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Mortgage Planning & Strategy in Madison, WI | MadCity Home Loans',
+  title: 'Mortgage Planning & Wealth Strategy Madison, WI | Rob Miller',
   description:
-    'A mortgage is a powerful financial tool. Rob Miller provides expert mortgage planning and long-term strategy for Wisconsin homeowners. Plan for your financial future today. Call 608-227-2002.',
-  keywords: ['mortgage planning Madison WI', 'home loan strategy Wisconsin', 'financial planning mortgage Madison', 'Rob Miller mortgage planning'],
+    'A mortgage is a powerful financial tool. Rob Miller provides expert mortgage planning and long-term strategy for Wisconsin homeowners. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['mortgage planning Madison WI', 'home loan strategy Wisconsin', 'financial planning mortgage Madison', 'Rob Miller mortgage planning', 'licensed in 11 states'],
 };
 
 const faqs = [

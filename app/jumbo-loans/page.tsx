@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Jumbo Home Loans in Madison, WI | High-Balance Mortgage | MadCity Home Loans',
+  title: 'Jumbo Loans in Madison, WI | High-Value Home Loans | MadCity Home Loans',
   description:
-    'Jumbo loans in Wisconsin for loan amounts above $766,550. Rob Miller offers competitive rates on high-balance mortgages with flexible qualification options. Call 608-227-2002.',
-  keywords: ['jumbo loans Madison WI', 'jumbo mortgage Wisconsin', 'high balance home loan Madison', 'luxury home loan Wisconsin', 'non-conforming mortgage Madison'],
+    'Jumbo loans for luxury properties in Wisconsin and 10 other states. Rob Miller provides expert high-balance financing above conforming limits. Call 608-227-2002. Licensed in WI, IL, MN, FL, TX, CO, TN, GA, AZ, MI, and NC.',
+  keywords: ['jumbo loans Madison WI', 'high balance mortgage Wisconsin', 'luxury home financing Madison', 'large loan amounts WI', 'Rob Miller jumbo loan'],
 };
 
 const faqs = [

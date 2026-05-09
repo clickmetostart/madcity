@@ -6,8 +6,8 @@ import CTABanner from '../../components/CTABanner';
 export const metadata: Metadata = {
   title: 'Client Reviews | Rob Miller Madison Mortgage Lender | MadCity Home Loans',
   description:
-    'Read real Google reviews and testimonials from Wisconsin homeowners who have worked with Rob Miller and MadCity Home Loans. 5.0 rated mortgage expertise in Madison, WI.',
-  keywords: ['Rob Miller reviews', 'MadCity Home Loans reviews', 'mortgage lender reviews Madison', 'Rob Miller testimonials', 'best mortgage lender Madison'],
+    'Read real Google reviews and testimonials from Wisconsin homeowners. With a 5.0 rating, Rob Miller and MadCity Home Loans are the trusted choice for Madison mortgages.',
+  keywords: ['Rob Miller reviews', 'MadCity Home Loans reviews', 'mortgage lender reviews Madison', 'Rob Miller testimonials', 'best mortgage lender Madison', '5 star mortgage lender Wisconsin'],
 };
 
 export default function ReviewsPage() {

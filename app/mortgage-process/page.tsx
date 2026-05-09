@@ -5,10 +5,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'The Mortgage Process: Step-by-Step Guide | MadCity Home Loans',
+  title: 'The Mortgage Process: Step-by-Step Guide | Rob Miller | MadCity',
   description:
-    'Understand the home loan process from start to finish. Our 12-step guide explains pre-approval, house hunting, underwriting, and closing your Wisconsin home loan. Call 608-227-2002.',
-  keywords: ['mortgage process Wisconsin', 'home loan steps Madison WI', 'how to get a mortgage Madison', 'mortgage timeline Wisconsin', 'closing on a house Madison'],
+    'Understand the home loan process from start to finish. Our 12-step guide explains pre-approval, house hunting, and closing your Wisconsin mortgage. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['mortgage process Wisconsin', 'home loan steps Madison WI', 'how to get a mortgage Madison', 'mortgage timeline Wisconsin', 'closing on a house Madison', 'licensed in 11 states'],
 };
 
 const steps = [

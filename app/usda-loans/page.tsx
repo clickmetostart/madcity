@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'USDA Home Loans in Wisconsin | $0 Down Rural Financing | MadCity Home Loans',
+  title: 'USDA Loans in Madison, WI | 0% Down Rural Loans | MadCity Home Loans',
   description:
-    'USDA loans in Wisconsin offer 100% financing with no down payment for eligible rural and suburban properties. Rob Miller helps Wisconsin buyers qualify for USDA financing. Call 608-227-2002.',
-  keywords: ['USDA loans Wisconsin', 'rural home loan Madison WI', 'zero down mortgage Wisconsin', 'USDA mortgage lender Madison', 'USDA loan eligible areas Wisconsin'],
+    'USDA rural development loans in Wisconsin with zero down payment. Rob Miller helps families qualify for 100% financing in eligible areas. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['USDA loans Madison WI', 'rural development loan Wisconsin', 'zero down mortgage WI', '100% financing home loan', 'USDA eligibility Wisconsin'],
 };
 
 const faqs = [

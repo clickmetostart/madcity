@@ -4,8 +4,8 @@ import { getSortedPostsData } from '@/lib/posts';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Knowledge Hub | MadCity Home Loans',
-  description: 'Expert mortgage advice, market updates, and homebuyer tips from Rob Miller and the MadCity Home Loans team in Madison, WI.',
+  title: 'Mortgage Knowledge Hub | Madison, WI Real Estate Blog | MadCity',
+  description: 'Expert mortgage advice, market updates, and homebuyer tips from Rob Miller. Stay informed on the 2026 Wisconsin real estate market. Licensed in 11 states.',
 };
 
 export default function KnowledgeHub() {

@@ -7,8 +7,8 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Meet the MadCity Home Loans Team | Madison, WI Mortgage Experts',
   description:
-    'The MadCity Home Loans team, led by Rob Miller, provides expert mortgage services in Madison, WI. Learn about our Processing, Closing, and Loan Managers committed to your success. Call 608-227-2002.',
-  keywords: ['MadCity Home Loans team', 'Madison mortgage team', 'Rob Miller team Madison', 'local mortgage experts Madison', 'Callie Causey', 'Jon Donovan', 'Kerstin Dwyer'],
+    'Led by Rob Miller, the MadCity Home Loans team provides 5-star mortgage services in Madison, WI. Our expert managers ensure fast, transparent closings for every family. Call 608-227-2002.',
+  keywords: ['MadCity Home Loans team', 'Madison mortgage team', 'Rob Miller team Madison', 'local mortgage experts Madison', 'Callie Causey', 'Jon Donovan', 'Kerstin Dwyer', 'mortgage processing Madison'],
 };
 
 const teamMembers = [

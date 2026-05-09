@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'First-Time Home Buyer Programs in Madison, WI | MadCity Home Loans',
+  title: 'First-Time Home Buyer Programs Madison, WI | Rob Miller | MadCity',
   description:
-    'First-time homebuyer programs in Wisconsin with low down payments, down payment assistance, and expert guidance. Rob Miller has helped hundreds of first-time buyers in Madison, WI achieve homeownership. Call 608-227-2002.',
-  keywords: ['first-time home buyer Madison WI', 'first-time homebuyer Wisconsin', 'first-time buyer mortgage Madison', 'down payment assistance Wisconsin', 'WHEDA first-time buyer'],
+    'Expert guidance for first-time homebuyers in Wisconsin. Low down payments, WHEDA assistance, and 5-star service from Rob Miller. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['first-time home buyer Madison WI', 'first-time homebuyer Wisconsin', 'first-time buyer mortgage Madison', 'down payment assistance Wisconsin', 'WHEDA first-time buyer', 'licensed in 11 states'],
 };
 
 const faqs = [

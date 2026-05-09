@@ -4,8 +4,8 @@ import Image from 'next/image';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Strategic Partners | MadCity Home Loans Madison WI',
-  description: 'Meet our network of trusted Wisconsin professionals in insurance, legal, remodeling, and more. Strategic partners of Rob Miller and MadCity Home Loans.',
+  title: 'Trusted Professionals & Strategic Partners Madison, WI | MadCity',
+  description: 'Meet Rob Miller\'s network of trusted Wisconsin professionals. From real estate and insurance to legal and remodeling, we connect you with the best experts in Madison. Call 608-227-2002.',
 };
 
 const partners = [

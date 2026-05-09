@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Home Equity Loans & Cash-Out Refinance | MadCity Home Loans',
+  title: 'Home Equity Loans & Cash-Out Refinance Madison | Rob Miller',
   description:
-    'Put your home equity to work. Rob Miller helps Madison, WI homeowners access their equity through cash-out refinances and home equity loans for renovations, debt payoff, and more. Call 608-227-2002.',
-  keywords: ['home equity loan Madison WI', 'cash-out refinance Wisconsin', 'HELOC vs cash-out Madison', 'access home equity Madison'],
+    'Access your home equity for renovations, debt payoff, or investments. Rob Miller helps Madison homeowners with strategic cash-out refinances. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['home equity loan Madison WI', 'cash-out refinance Wisconsin', 'HELOC vs cash-out Madison', 'access home equity Madison', 'licensed in 11 states'],
 };
 
 const faqs = [

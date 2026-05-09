@@ -4,10 +4,10 @@ import ContactForm from '../../components/ContactForm';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Contact Rob Miller | MadCity Home Loans in Madison, WI',
+  title: 'Contact Rob Miller | Madison, WI Mortgage Expert | MadCity',
   description:
-    'Have a question about home loans? Contact Rob Miller, Senior Loan Officer at MadCity Home Loans. Call 608-227-2002 or visit us in Madison, WI.',
-  keywords: ['contact Rob Miller Madison', 'mortgage lender contact Madison', 'Rob Miller phone number', 'MadCity Home Loans address'],
+    'Ready to start your home loan? Contact Rob Miller, Branch Manager at MadCity Home Loans. Licensed in 11 states. Expert guidance in Madison, WI. Call 608-227-2002.',
+  keywords: ['contact Rob Miller Madison', 'mortgage lender contact Madison', 'Rob Miller phone number', 'MadCity Home Loans address', 'licensed in 11 states'],
 };
 
 export default function ContactPage() {

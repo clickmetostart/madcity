@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Purchase a New Home in Madison, WI | Expert Mortgage Guidance | MadCity Home Loans',
+  title: 'Purchase a New Home Madison, WI | Rob Miller | MadCity Home Loans',
   description:
-    'Planning to purchase a new home in Wisconsin? Get expert mortgage advice, fast pre-approvals, and local market insights from Rob Miller. Navigate the Madison real estate market with confidence. Call 608-227-2002.',
-  keywords: ['purchase home Madison WI', 'home buying process Wisconsin', 'buy a house Madison', 'mortgage pre-approval Madison', 'Madison real estate financing'],
+    'Planning to purchase a new home in Wisconsin? Get expert mortgage advice, fast pre-approvals, and local market insights from Rob Miller. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['purchase home Madison WI', 'home buying process Wisconsin', 'buy a house Madison', 'mortgage pre-approval Madison', 'Madison real estate financing', 'Rob Miller licensed in 11 states'],
 };
 
 const faqs = [

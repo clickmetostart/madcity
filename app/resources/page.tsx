@@ -4,10 +4,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css'; // Reusing layout styles
 
 export const metadata: Metadata = {
-  title: 'Mortgage Resources & Home Buyer Tools | MadCity Home Loans',
+  title: 'Mortgage Services & Resources | Home Buyer Tools | MadCity Home Loans',
   description:
-    'Explore our comprehensive library of mortgage resources, home buyer guides, and financial tools for Wisconsin homeowners. Learn about the loan process, calculate payments, and plan your future. Call 608-227-2002.',
-  keywords: ['mortgage resources Madison WI', 'home buyer guides Wisconsin', 'mortgage tools Madison', 'Rob Miller resources'],
+    'Explore our library of mortgage resources, home buyer guides, and financial tools. From FHA to Jumbo loans, we provide the expertise Madison homeowners need to succeed. Call 608-227-2002.',
+  keywords: ['mortgage resources Madison WI', 'home buyer guides Wisconsin', 'mortgage tools Madison', 'Rob Miller resources', 'mortgage services Madison'],
 };
 
 const resourceGroups = [

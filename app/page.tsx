@@ -7,9 +7,9 @@ import InteractiveMap from '../components/InteractiveMap';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Madison, WI Mortgage Lender | Home Loans 2026 | MadCity Home Loans',
+  title: 'Madison, WI Mortgage Lender | Home Loans 2026 | Rob Miller | MadCity Home Loans',
   description:
-    'MadCity Home Loans — Rob Miller, Senior Loan Officer in Madison, WI. Expert FHA, VA, conventional, jumbo, USDA & WHEDA loans in 2026. Fast closings, local expertise. Call 608-227-2002.',
+    'MadCity Home Loans — Rob Miller, Senior Loan Officer in Madison, WI. Licensed in 11 states. Expert FHA, VA, conventional, jumbo, USDA & WHEDA loans in 2026. Fast closings, local expertise. Call 608-227-2002.',
 };
 
 const loanPrograms = [

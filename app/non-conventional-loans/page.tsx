@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Non-Conventional Loans in Wisconsin | Bank Statement & DSCR | MadCity Home Loans',
+  title: 'Non-Conventional Loans in Madison, WI | Specialized Lending | MadCity Home Loans',
   description:
-    'Non-conventional mortgage programs for self-employed borrowers, real estate investors, and buyers who don\'t fit standard guidelines. Rob Miller offers bank statement, DSCR, and asset-depletion loans in Wisconsin. Call 608-227-2002.',
-  keywords: ['non-conventional loans Wisconsin', 'bank statement loan Madison WI', 'DSCR loan Wisconsin', 'self-employed mortgage Madison', 'non-QM loan Wisconsin'],
+    'Non-conventional mortgage solutions for unique borrowers. Bank statement loans, DSCR investor loans, and asset-depletion products. Licensed in 11 states. Call 608-227-2002.',
+  keywords: ['non-conventional loans Madison', 'bank statement loans Wisconsin', 'DSCR loans Madison', 'specialized mortgage products WI', 'Rob Miller non-QM expert'],
 };
 
 const faqs = [

@@ -5,10 +5,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'About Rob Miller | Senior Loan Officer in Madison, WI | MadCity Home Loans',
+  title: 'Meet Rob Miller | Expert Mortgage Lender in Madison, WI',
   description:
-    'Meet Rob Miller, your local Madison mortgage expert. With 15+ years of experience, Rob helps Wisconsin families navigate the home loan process with transparency and speed. Learn more about Rob Miller NMLS #239865.',
-  keywords: ['Rob Miller Madison', 'mortgage broker Madison WI', 'loan officer Madison WI', 'Rob Miller ProVisor', 'MadCity Home Loans Rob Miller'],
+    'Meet Rob Miller, Branch Manager at MadCity Home Loans. Licensed in 11 states with 15+ years of experience helping families secure mortgages. Call 608-227-2002.',
+  keywords: ['Rob Miller', 'Mortgage Lender Madison WI', 'MadCity Home Loans', 'Rob Miller NMLS 239865', 'Home Loans Wisconsin', 'Mortgage Expert', 'Licensed in 11 states'],
 };
 
 export default function AboutRobPage() {

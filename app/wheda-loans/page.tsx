@@ -7,10 +7,10 @@ import CTABanner from '../../components/CTABanner';
 import styles from '../fha-loans/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'WHEDA Loans in Wisconsin | First-Time Buyer Programs | MadCity Home Loans',
+  title: 'WHEDA Loans in Madison, WI | Down Payment Assistance | MadCity Home Loans',
   description:
-    'WHEDA loans offer Wisconsin first-time homebuyers below-market interest rates and down payment assistance. Rob Miller is an approved WHEDA lender in Madison, WI. Call 608-227-2002.',
-  keywords: ['WHEDA loans Wisconsin', 'WHEDA mortgage Madison WI', 'Wisconsin first-time homebuyer program', 'WHEDA advantage loan', 'Wisconsin Housing Economic Development Authority'],
+    'WHEDA loans for Wisconsin homebuyers. Rob Miller is an expert in WHEDA down payment assistance and below-market rates. Achieve homeownership sooner. Call 608-227-2002.',
+  keywords: ['WHEDA loans Madison WI', 'WHEDA down payment assistance', 'Wisconsin first time buyer programs', 'below market mortgage rates WI', 'WHEDA specialist Rob Miller'],
 };
 
 const faqs = [
