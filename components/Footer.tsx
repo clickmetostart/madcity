@@ -37,10 +37,10 @@ export default function Footer() {
         <div className={styles.brandCol}>
           <Link href="/">
             <Image 
-              src="/logo-transparent-hd.png" 
+              src="/logo-footer.png" 
               alt="MadCity Home Loans" 
-              width={160} 
-              height={160} 
+              width={180} 
+              height={180} 
               className={styles.footerLogo} 
             />
           </Link>

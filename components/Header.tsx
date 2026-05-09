@@ -50,7 +50,7 @@ export default function Header() {
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
         <div className={`container ${styles.navContainer}`}>
           <Link href="/" className={styles.logoLink}>
-            <Image src="/logo-transparent.png" alt="MadCity Home Loans" width={120} height={120} priority className={styles.logo} />
+            <Image src="/logo-header.jpg" alt="MadCity Home Loans" width={180} height={54} priority className={styles.logo} />
           </Link>
 
           <nav className={styles.nav} onMouseLeave={() => setActiveMega(null)}>
