@@ -103,7 +103,9 @@ export default function HomePage() {
                 <span className={styles.loanIcon}>{loan.icon}</span>
                 <h3 className={styles.loanTitle}>{loan.title}</h3>
                 <p className={styles.loanDesc}>{loan.desc}</p>
-                <span className={styles.loanArrow}>Explore Program →</span>
+                <span className={styles.loanArrow}>
+                  {loan.title === 'Mortgage Services' ? 'Explore Resources →' : 'Explore Program →'}
+                </span>
               </Link>
             ))}
           </div>

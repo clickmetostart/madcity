@@ -442,12 +442,41 @@ details[open] .mobileChevron {
 }
 
 .mobileDivider {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  display: none; /* Replaced by sub-details */
+}
+
+.mobileSubDetails {
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.mobileSubSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  cursor: pointer;
+  list-style: none;
+}
+
+.mobileSubSummary::-webkit-details-marker {
+  display: none;
+}
+
+.mobileStateLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem 0 0 1rem;
+}
+
+.mobileStateLinks a {
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--text-muted);
-  margin-top: 0.5rem;
-  opacity: 0.6;
 }
 
 .mobileSubLinks a {

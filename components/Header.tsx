@@ -258,12 +258,17 @@ export default function Header() {
               <div className={styles.mobileSubLinks}>
                 <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" onClick={() => setMobileOpen(false)}><strong>Start Your Application</strong></Link>
                 <Link href="/contact" onClick={() => setMobileOpen(false)}>Visit Contact Page</Link>
-                <div className={styles.mobileDivider}>Select Your State:</div>
-                {stateLinks.map(state => (
-                  <Link key={state.slug} href={`/locations/${state.slug}`} onClick={() => setMobileOpen(false)}>
-                    {state.name}
-                  </Link>
-                ))}
+                
+                <details className={styles.mobileSubDetails}>
+                  <summary className={styles.mobileSubSummary}>View Licensed States <span className={styles.mobileChevron}>▾</span></summary>
+                  <div className={styles.mobileStateLinks}>
+                    {stateLinks.map(state => (
+                      <Link key={state.slug} href={`/locations/${state.slug}`} onClick={() => setMobileOpen(false)}>
+                        {state.name}
+                      </Link>
+                    ))}
+                  </div>
+                </details>
               </div>
             </details>
           </div>
