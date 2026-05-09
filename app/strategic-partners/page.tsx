@@ -95,7 +95,7 @@ const partners = [
     desc: 'Commercial and residential construction expertise.',
     link: 'https://kswconstruction.com/',
     category: 'Construction',
-    img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/DSC_0003-1073x1536-1.jpg'
+    img: 'https://madcityhomeloans.com/wp-content/uploads/2026/01/Dean-Slaby-KSW-KSW-Construction.png'
   },
   { 
     name: 'Eric Fenton', 
