@@ -20,6 +20,7 @@ const loanPrograms = [
   { href: '/usda-loans', icon: '🌾', title: 'USDA Loans', desc: 'Zero down payment for eligible rural and suburban Wisconsin homes. Income limits apply — check your 2026 eligibility today.' },
   { href: '/wheda-loans', icon: '🌟', title: 'WHEDA Loans', desc: 'Wisconsin\'s exclusive program offers below-market interest rates and down payment assistance for state residents.' },
   { href: '/non-conventional-loans', icon: '💡', title: 'Non-Conventional', desc: 'Bank statement loans, DSCR investor loans, and asset-depletion products for borrowers who don\'t fit the traditional mold.' },
+  { href: '/resources', icon: '🛠️', title: 'Mortgage Services', desc: 'From purchase planning to equity management. Explore our full suite of professional mortgage services designed for your success.' },
 ];
 
 const stats = [
