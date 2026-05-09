@@ -74,6 +74,7 @@ export default function Header() {
                     </div>
                     <div className={styles.aboutLinks}>
                       <Link href="/about-mad-city-home-loans-team" onClick={() => setActiveMega(null)}>The MadCity Team</Link>
+                      <Link href="/strategic-partners" onClick={() => setActiveMega(null)}>Strategic Partners</Link>
                       <Link href="/mortgage-process" onClick={() => setActiveMega(null)}>The 12-Step Process</Link>
                       <Link href="/reviews" onClick={() => setActiveMega(null)}>Client Reviews</Link>
                     </div>
