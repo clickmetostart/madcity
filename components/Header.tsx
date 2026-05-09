@@ -163,10 +163,19 @@ export default function Header() {
               <div className={`${styles.megaMenu} ${activeMega === 'contact' ? styles.megaVisible : ''}`}>
                 <div className="container">
                   <div className={styles.locationsMega}>
-                    <div className={styles.megaSide}>
-                      <h3>Contact Our Team</h3>
-                      <p>We are licensed in 11 states to provide expert mortgage guidance tailored to your local market.</p>
-                      <Link href="/contact" className="btn btn-primary btn-sm" onClick={() => setActiveMega(null)}>General Contact Form</Link>
+                    <div className={styles.contactMegaSide}>
+                      <div className={styles.aboutCard}>
+                        <Image src="/rob-miller.jpg" alt="Rob Miller" width={80} height={100} className={styles.aboutImg} />
+                        <div>
+                          <strong>Ready to Start?</strong>
+                          <p>Schedule a call or start your application with Rob Miller today.</p>
+                          <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" className="btn btn-primary btn-sm" onClick={() => setActiveMega(null)}>Start Application →</Link>
+                        </div>
+                      </div>
+                      <div className={styles.contactQuickLinks}>
+                        <Link href="/contact" onClick={() => setActiveMega(null)}>Standard Contact Form</Link>
+                        <Link href="tel:6082272002" onClick={() => setActiveMega(null)}>Call 608-227-2002</Link>
+                      </div>
                     </div>
                     <div className={styles.locationsGrid}>
                       <div className={styles.locationsHeader}>
@@ -247,7 +256,8 @@ export default function Header() {
             <details className={styles.mobileDetails}>
               <summary className={styles.mobileSummary}>Contact Us <span className={styles.mobileChevron}>▾</span></summary>
               <div className={styles.mobileSubLinks}>
-                <Link href="/contact" onClick={() => setMobileOpen(false)}><strong>General Contact</strong></Link>
+                <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" onClick={() => setMobileOpen(false)}><strong>Start Your Application</strong></Link>
+                <Link href="/contact" onClick={() => setMobileOpen(false)}>Standard Contact Form</Link>
                 <div className={styles.mobileDivider}>Select Your State:</div>
                 {stateLinks.map(state => (
                   <Link key={state.slug} href={`/locations/${state.slug}`} onClick={() => setMobileOpen(false)}>
