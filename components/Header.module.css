@@ -197,6 +197,24 @@
   gap: 1rem;
 }
 
+.locationsHeader {
+  grid-column: 1 / -1;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5rem;
+}
+
+.locationsHeader strong {
+  display: block;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.locationsHeader span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
 .locationItem {
   display: block;
   padding: 0.75rem 1rem;
@@ -394,6 +412,15 @@ details[open] .mobileChevron {
   padding-left: 1rem;
   margin-top: 1rem;
   border-left: 2px solid var(--bg-slate);
+}
+
+.mobileDivider {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  opacity: 0.6;
 }
 
 .mobileSubLinks a {

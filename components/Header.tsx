@@ -152,22 +152,27 @@ export default function Header() {
                 </div>
               </div>
             </div>
+            <Link href="/knowledge-hub" className={styles.navLink}>Knowledge Hub</Link>
             <div 
               className={styles.navItem} 
-              onMouseEnter={() => setActiveMega('locations')}
+              onMouseEnter={() => setActiveMega('contact')}
             >
               <button className={styles.navBtn}>
-                Locations <span className={styles.chevron}>▾</span>
+                Contact Us <span className={styles.chevron}>▾</span>
               </button>
-              <div className={`${styles.megaMenu} ${activeMega === 'locations' ? styles.megaVisible : ''}`}>
+              <div className={`${styles.megaMenu} ${activeMega === 'contact' ? styles.megaVisible : ''}`}>
                 <div className="container">
                   <div className={styles.locationsMega}>
                     <div className={styles.megaSide}>
-                      <h3>Licensed in 11 States</h3>
-                      <p>Providing expert mortgage guidance across the country with a focus on local expertise.</p>
-                      <Link href="/contact" className="btn btn-outline btn-sm" onClick={() => setActiveMega(null)}>Contact Local Team</Link>
+                      <h3>Contact Our Team</h3>
+                      <p>We are licensed in 11 states to provide expert mortgage guidance tailored to your local market.</p>
+                      <Link href="/contact" className="btn btn-primary btn-sm" onClick={() => setActiveMega(null)}>General Contact Form</Link>
                     </div>
                     <div className={styles.locationsGrid}>
+                      <div className={styles.locationsHeader}>
+                        <strong>Select Your State</strong>
+                        <span>For localized SEO & contact info</span>
+                      </div>
                       {stateLinks.map(state => (
                         <Link 
                           key={state.slug} 
@@ -183,8 +188,6 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <Link href="/knowledge-hub" className={styles.navLink}>Knowledge Hub</Link>
-            <Link href="/contact" className={styles.navLink}>Contact Us</Link>
           </nav>
 
           <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" rel="noopener noreferrer"
@@ -240,9 +243,12 @@ export default function Header() {
               </div>
             </details>
 
+            <Link href="/knowledge-hub" onClick={() => setMobileOpen(false)}>Knowledge Hub</Link>
             <details className={styles.mobileDetails}>
-              <summary className={styles.mobileSummary}>Locations <span className={styles.mobileChevron}>▾</span></summary>
+              <summary className={styles.mobileSummary}>Contact Us <span className={styles.mobileChevron}>▾</span></summary>
               <div className={styles.mobileSubLinks}>
+                <Link href="/contact" onClick={() => setMobileOpen(false)}><strong>General Contact</strong></Link>
+                <div className={styles.mobileDivider}>Select Your State:</div>
                 {stateLinks.map(state => (
                   <Link key={state.slug} href={`/locations/${state.slug}`} onClick={() => setMobileOpen(false)}>
                     {state.name}
@@ -250,9 +256,6 @@ export default function Header() {
                 ))}
               </div>
             </details>
-
-            <Link href="/knowledge-hub" onClick={() => setMobileOpen(false)}>Knowledge Hub</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact Us</Link>
           </div>
           <div className={styles.mobileCta}>
             <Link href="https://provisor.shapeportal.com/ref/34" className="btn btn-primary w-full">Apply Online</Link>
