@@ -1,0 +1,139 @@
+.postPage {
+  background: var(--bg-white);
+  padding-bottom: 5rem;
+}
+
+.header {
+  padding: 8rem 0 4rem;
+  background: linear-gradient(to bottom, #f8f9fa, #fff);
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.backLink {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: var(--gold-dark);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.author {
+  color: var(--gold-dark);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--primary);
+  line-height: 1.2;
+  margin: 0;
+  max-width: 800px;
+}
+
+.contentWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin: 2.5rem 0 1rem;
+}
+
+.content h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.content ul, .content ol {
+  margin: 0 0 1.5rem 2rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin: 2rem 0;
+}
+
+.content a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+}
+
+/* ── CTA Box ─────────────────────────────────────────── */
+.ctaSection {
+  margin-top: 2rem;
+}
+
+.ctaBox {
+  background: var(--primary);
+  color: #fff;
+  padding: 4rem;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaBox h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.ctaBox p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.8);
+  margin: 0 auto 2.5rem;
+}
+
+.ctaBtns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .ctaBtns {
+    flex-direction: column;
+  }
+  .ctaBox {
+    padding: 2.5rem 1.5rem;
+  }
+}

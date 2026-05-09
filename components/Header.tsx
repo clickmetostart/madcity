@@ -138,7 +138,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-
+            <Link href="/knowledge-hub" className={styles.navLink}>Knowledge Hub</Link>
             <Link href="/contact" className={styles.navLink}>Contact Us</Link>
           </nav>
 
