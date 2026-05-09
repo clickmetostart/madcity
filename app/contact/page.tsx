@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import RobCard from '../../components/RobCard';
+import ContactForm from '../../components/ContactForm';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -19,8 +20,8 @@ export default function ContactPage() {
             <h1>How Can We Help You?</h1>
             <div className="gold-line" />
             <p className={styles.heroSubtitle}>
-              Whether you\'re ready to start your application or just have a few questions, 
-              we\'re here to provide the expert guidance you need.
+              Whether you're ready to start your application or just have a few questions, 
+              we're here to provide the expert guidance you need.
             </p>
           </div>
         </div>
@@ -29,6 +30,14 @@ export default function ContactPage() {
       <section className="section">
         <div className="container">
           <div className={styles.contactGrid}>
+            <div className={styles.formCol}>
+              <div className={styles.formCard}>
+                <h2>Send a Message</h2>
+                <p>Fill out the form below and Rob will get back to you personally.</p>
+                <ContactForm />
+              </div>
+            </div>
+
             <div className={styles.infoCol}>
               <div className={styles.contactMethod}>
                 <div className={styles.icon}>📞</div>
@@ -62,20 +71,13 @@ export default function ContactPage() {
                 <h4>Office Hours</h4>
                 <div className={styles.hourRow}><span>Monday – Friday</span> <strong>8:00 AM – 6:00 PM</strong></div>
                 <div className={styles.hourRow}><span>Saturday – Sunday</span> <strong>By Appointment</strong></div>
-                <p className={styles.hoursNote}>* Rob is available for urgent pre-approval requests on weekends.</p>
+                <p className={styles.hoursNote}>* Rob is available for urgent weekend requests.</p>
+              </div>
+
+              <div className={styles.sidebarCard}>
+                <RobCard />
               </div>
             </div>
-
-            <aside className={styles.sidebar}>
-              <RobCard />
-              <div className={styles.quickCta}>
-                <h3>Ready to apply?</h3>
-                <p>Skip the call and start your secure online application now.</p>
-                <a href="https://provisor.shapeportal.com/ref/34" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%' }}>
-                  Apply Online
-                </a>
-              </div>
-            </aside>
           </div>
         </div>
       </section>
