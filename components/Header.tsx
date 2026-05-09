@@ -157,9 +157,9 @@ export default function Header() {
               className={styles.navItem} 
               onMouseEnter={() => setActiveMega('contact')}
             >
-              <button className={styles.navBtn}>
+              <Link href="/contact" className={styles.navBtn} onClick={() => setActiveMega(null)}>
                 Contact Us <span className={styles.chevron}>▾</span>
-              </button>
+              </Link>
               <div className={`${styles.megaMenu} ${activeMega === 'contact' ? styles.megaVisible : ''}`}>
                 <div className="container">
                   <div className={styles.locationsMega}>

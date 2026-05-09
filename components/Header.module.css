@@ -46,6 +46,7 @@
   padding: 0 0.5rem;
   height: 100%;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 .navBtn:hover, .navLink:hover {
