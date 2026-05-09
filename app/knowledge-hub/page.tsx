@@ -29,8 +29,13 @@ export default function KnowledgeHub() {
       <section className="section">
         <div className="container">
           <div className={styles.grid}>
-            {posts.map(({ slug, title, description, date }) => (
+            {posts.map(({ slug, title, description, date, image }) => (
               <Link href={`/knowledge-hub/${slug}`} key={slug} className={styles.card}>
+                {image && (
+                  <div className={styles.cardImgWrap}>
+                    <img src={image} alt={title} className={styles.cardImg} />
+                  </div>
+                )}
                 <div className={styles.cardHeader}>
                   <time className={styles.date}>{new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</time>
                   <h3 className={styles.title}>{title}</h3>

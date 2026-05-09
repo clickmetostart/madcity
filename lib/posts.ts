@@ -8,6 +8,7 @@ export type BlogPost = {
   title: string;
   description: string;
   date: string;
+  image?: string;
   content: string;
 };
 
@@ -53,6 +54,7 @@ export function getSortedPostsData(): Omit<BlogPost, 'content'>[] {
       title: data.title || 'Untitled',
       description: data.description || '',
       date: data.date || '2026-01-01',
+      image: data.image || '',
     };
   });
 
@@ -74,6 +76,7 @@ export function getPostData(slug: string): BlogPost | null {
     title: data.title || 'Untitled',
     description: data.description || '',
     date: data.date || '2026-01-01',
+    image: data.image || '',
     content,
   };
 }
