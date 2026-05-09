@@ -143,7 +143,7 @@ export default function Header() {
           </nav>
 
           <Link href="https://provisor.shapeportal.com/ref/34" target="_blank" rel="noopener noreferrer"
-            className="btn btn-primary btn-sm" id="header-apply-btn">
+            className={`btn btn-primary btn-sm ${styles.applyBtn}`} id="header-apply-btn">
             Apply Now
           </Link>
 
@@ -159,11 +159,44 @@ export default function Header() {
           <button className={styles.closeBtn} onClick={() => setMobileOpen(false)}>✕ Close</button>
           <div className={styles.mobileLinks}>
             <Link href="/" onClick={() => setMobileOpen(false)}>Home</Link>
-            <Link href="/loan-types" onClick={() => setMobileOpen(false)}>Loan Programs</Link>
-            <Link href="/services" onClick={() => setMobileOpen(false)}>Services</Link>
-            <Link href="/mortgage-calculator" onClick={() => setMobileOpen(false)}>Calculator</Link>
-            <Link href="/about-rob" onClick={() => setMobileOpen(false)}>About Rob</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
+
+            <details className={styles.mobileDetails}>
+              <summary className={styles.mobileSummary}>About <span className={styles.mobileChevron}>▾</span></summary>
+              <div className={styles.mobileSubLinks}>
+                <Link href="/about-rob" onClick={() => setMobileOpen(false)}>Meet Rob Miller</Link>
+                <Link href="/about-mad-city-home-loans-team" onClick={() => setMobileOpen(false)}>The MadCity Team</Link>
+                <Link href="/strategic-partners" onClick={() => setMobileOpen(false)}>Strategic Partners</Link>
+                <Link href="/mortgage-process" onClick={() => setMobileOpen(false)}>The 12-Step Process</Link>
+                <Link href="/reviews" onClick={() => setMobileOpen(false)}>Client Reviews</Link>
+              </div>
+            </details>
+
+            <details className={styles.mobileDetails}>
+              <summary className={styles.mobileSummary}>Loan Programs <span className={styles.mobileChevron}>▾</span></summary>
+              <div className={styles.mobileSubLinks}>
+                <Link href="/loan-types" onClick={() => setMobileOpen(false)}><strong>All Loan Programs</strong></Link>
+                {loanTypes.map(loan => (
+                  <Link key={loan.href} href={loan.href} onClick={() => setMobileOpen(false)}>
+                    {loan.label}
+                  </Link>
+                ))}
+              </div>
+            </details>
+
+            <details className={styles.mobileDetails}>
+              <summary className={styles.mobileSummary}>Services <span className={styles.mobileChevron}>▾</span></summary>
+              <div className={styles.mobileSubLinks}>
+                <Link href="/services" onClick={() => setMobileOpen(false)}><strong>All Services</strong></Link>
+                {services.map(s => (
+                  <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)}>
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
+            </details>
+
+            <Link href="/knowledge-hub" onClick={() => setMobileOpen(false)}>Knowledge Hub</Link>
+            <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact Us</Link>
           </div>
           <div className={styles.mobileCta}>
             <Link href="https://provisor.shapeportal.com/ref/34" className="btn btn-primary w-full">Apply Online</Link>
